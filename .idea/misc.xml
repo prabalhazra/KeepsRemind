@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/drawable-v24/ic_baseline_color_lens_24.xml" value="0.2564102564102564" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/drawable-v24/ic_baseline_save_24.xml" value="0.259375" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/drawable-v24/ic_round_arrow_back_24.xml" value="0.259375" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/drawable/bottom_sheet_rounded.xml" value="0.2564102564102564" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/drawable/date_rounded.xml" value="0.2564102564102564" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/drawable/ic_no_data.xml" value="0.259375" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/drawable/rounded_search.xml" value="0.2604166666666667" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/layout/activity_main.xml" value="0.24427083333333333" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.264" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/layout/fragment_note.xml" value="0.23948717948717949" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/layout/fragment_save_or_update.xml" value="0.30244530244530243" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/layout/note_item_layout.xml" value="0.19074074074074074" />
+        <entry key="..\:/Android Development/KeepsRemind/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2553846153846154" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

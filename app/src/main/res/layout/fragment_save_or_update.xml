@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/note_item_fragment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.SaveOrUpdateFragment">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_fragment_note_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/ic_round_arrow_back_24" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/last_edited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/back_btn"
+                android:background="@drawable/date_rounded"
+                android:ellipsize="end"
+                android:fontFamily="@font/google_sans_regular"
+                android:paddingStart="13dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="13dp"
+                android:paddingBottom="5dp"
+                android:text="@string/edited_on"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                tools:ignore="RelativeOverlap" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_color_picker"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/save_note"
+                android:contentDescription="@string/choose_color"
+                android:src="@drawable/ic_baseline_color_lens_24"
+                app:backgroundTint="@color/purple"
+                tools:ignore="RelativeOverlap"
+                app:fabSize="mini"/>
+
+            <ImageView
+                android:id="@+id/save_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_save_24" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_bar"
+            android:layout_below="@id/toolbar_fragment_note_content">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@null"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:hint="@string/note_title"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:textSize="22sp" />
+
+                    <com.yahiaangelo.markdownedittext.MarkdownEditText
+                        android:id="@+id/et_note_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="22dp"
+                        android:background="@null"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:hint="@string/note"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.yahiaangelo.markdownedittext.MarkdownStylesBar
+                android:id="@+id/style_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:padding="0dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
